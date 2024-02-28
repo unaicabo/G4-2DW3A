@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    /* Footer Links */
+    .footer-nav-links {
+        @apply flex flex-col items-center justify-center hover:text-lime-500 duration-300
+    }
+
+    /* Esconde o no las filas según la dificultad en ranking y si tienes iniciada la sesión */
+    /* Si estas log */
+    .rank-login {
+        @apply bg-gray-100 hover:bg-gray-300 hover:cursor-pointer
+    }
+    /* Si no estas log */
+    .rank-no-login {
+        @apply hover:bg-gray-300 hover:cursor-pointer
+    }
+    /* Botones de Pagination de Rankings */
+    .paginate-button {
+        @apply flex items-center justify-center px-4 h-10 text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700
+    }
+
+    /* Inputs de del Juego Roca */
+    .roca-letras {
+        @apply p-1 text-xs my-2 w-8 h-6 sm:text-sm sm:w-12 lg:w-16 lg:h-8 bg-[#B3D5AE];
+    }
+    .roca-symbols {
+        @apply p-1 text-xs my-2 w-14 h-6 sm:text-sm sm:w-16 lg:w-24 lg:h-8 bg-[#B3D5AE]
+    }
+}
